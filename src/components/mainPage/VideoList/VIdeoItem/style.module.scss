@@ -1,0 +1,40 @@
+.videoItem {
+  border: 1px solid #4a5159;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thumbnail {
+  height: 150px;
+  background-color: #000;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 70px auto, contain;
+}
+
+.content {
+  border-top: 1px solid #4a5159;
+  padding: 15px;
+  font: 14px/1 Roboto;
+  color: #4a5159;
+
+  strong {
+    font-weight: 700;
+  }
+
+  & > div {
+    margin-top: 10px;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 15px;
+
+  svg {
+    width: 22px;
+    height: auto;
+  }
+}

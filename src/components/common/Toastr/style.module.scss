@@ -1,0 +1,33 @@
+.toastr {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  cursor: pointer;
+  padding: 12px 20px;
+  font: 16px/1 Roboto;
+  transition: opacity .35s ease-in;
+  z-index: 200;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.toastrRed {
+  background: #f8d7da;
+  color: #721c24;
+
+  strong {
+    color: #491217;
+  }
+}
+
+.toastrGreen {
+  background: #d4edda;
+  color: #155724;
+
+  strong {
+    color: #0b2e13;
+  }
+}
