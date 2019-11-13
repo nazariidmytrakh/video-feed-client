@@ -7,13 +7,11 @@ const scriptId = 'playbuzz-sdk';
 
 const PlaybuzzVideoModal = ({ videoId }) => {
   useEffect(() => {
-    const removePlaybuzzSdk = () => {
-      const playBuzzScript = document.querySelector(`#${scriptId}`);
+    const onMount = () => (
+      window.Playbuzz ? window.Playbuzz.render() : null
+    );
 
-      playBuzzScript.parentNode.removeChild(playBuzzScript);
-    };
-
-    return removePlaybuzzSdk;
+    onMount();
   }, []);
 
   return (
